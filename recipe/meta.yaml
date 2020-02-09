@@ -1,5 +1,5 @@
 {% set name = "kwallet" %}
-{% set version = "5.65.0" %}
+{% set version = "5.67.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kwallet-{{ version }}.tar.xz
-  sha256: 93822bded2273e21be16d8c34c5f33939afeba0dd9d4f2f3ff3ae93029f71eb0
+  sha256: 90e1609872235812265599d1fbd218b9c36a325d2d4160ede6621027163581c3
 
 build:
   number: 0
