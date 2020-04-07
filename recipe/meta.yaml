@@ -1,5 +1,5 @@
 {% set name = "kwallet" %}
-{% set version = "5.67.0" %}
+{% set version = "5.68.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kwallet-{{ version }}.tar.xz
-  sha256: 90e1609872235812265599d1fbd218b9c36a325d2d4160ede6621027163581c3
+  sha256: 7524eeffdde3166df182f0dbf0f3f461905547bfd7a06387c7c503cd1ab75ecf
 
 build:
   number: 0
@@ -53,7 +53,7 @@ about:
   license: LGPL-v2.1-or-later
   license_family: GPL
   license_file: COPYING.LIB
-  summary: 'Safe desktop-wide storage for passwords'
+  summary: Safe desktop-wide storage for passwords
   dev_url: https://cgit.kde.org/kwallet.git/tree
 
 extra:
