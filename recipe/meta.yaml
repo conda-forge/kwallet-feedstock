@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
-    - extra-cmake-modules
+    - extra-cmake-modules >={{ version }}
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
@@ -34,15 +34,15 @@ requirements:
     - qt
     - gpgme
     - libgcrypt
-    - ki18n
-    - kconfig
-    - kservice
-    - kcoreaddons
-    - kdbusaddons
-    - kwindowsystem
-    - kconfigwidgets
-    - knotifications
-    - kwidgetsaddons
+    - ki18n >={{ version }}
+    - kconfig >={{ version }}
+    - kservice >={{ version }}
+    - kcoreaddons >={{ version }}
+    - kdbusaddons >={{ version }}
+    - kwindowsystem >={{ version }}
+    - kconfigwidgets >={{ version }}
+    - knotifications >={{ version }}
+    - kwidgetsaddons >={{ version }}
 
 test:
   commands:
