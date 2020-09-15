@@ -1,5 +1,5 @@
 {% set name = "kwallet" %}
-{% set version = "5.73.0" %}
+{% set version = "5.74.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kwallet-{{ version }}.tar.xz
-  sha256: 4a9c8a538054fc51b30679d5180d09bb6d12a833f595a8d6875b6d4c29074de1
+  sha256: 7abcf5230c7112628d4b1ac37648ab2d7fb147e4fda61e7aa0fd0da1d59cb0a1
 
 build:
   number: 0
@@ -50,9 +50,13 @@ test:
 
 about:
   home: https://api.kde.org/frameworks/kwallet/html/index.html
-  license: LGPL-v2.1-or-later
-  license_family: GPL
-  license_file: COPYING.LIB
+  license: BSD-3-Clause AND LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-or-later
+  license_file:
+    - LICENSES/BSD-3-Clause.txt
+    - LICENSES/LGPL-2.0-only.txt
+    - LICENSES/LGPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.1-or-later.txt
+    - LICENSES/LGPL-3.0-or-later.txt
   summary: Safe desktop-wide storage for passwords
   dev_url: https://cgit.kde.org/kwallet.git/tree
 
